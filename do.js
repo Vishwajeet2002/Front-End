@@ -8,7 +8,9 @@ function addTask() {
   const li = document.createElement("li");
 
   const span = document.createElement("span");
-  span.innerHTML = `<strong>${taskText}</strong><div class='datetime'>${new Date(datetime).toLocaleString()}</div>`;
+  span.innerHTML = `<strong>${taskText}</strong><div class='datetime'>${new Date(
+    datetime
+  ).toLocaleString()}</div>`;
 
   const deleteBtn = document.createElement("button");
   deleteBtn.innerText = "×";
