@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-group input[type="text"] {
+  flex: 2;
+}
+
+.input-group input[type="datetime-local"] {
+  flex: 1.5;
+}
+
+.input-group button {
+  background-color: #6e8efb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #a777e3;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.5s ease;
+}
+
+.datetime {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}

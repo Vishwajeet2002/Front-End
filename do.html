@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated To-Do List</title>
+    <link rel="stylesheet" href="do.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>My To-Do List</h2>
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Enter task..." />
+        <input type="datetime-local" id="datetimeInput" />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="do.js"></script>
+  </body>
+</html>
